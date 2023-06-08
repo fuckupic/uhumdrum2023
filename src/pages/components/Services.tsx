@@ -4,9 +4,9 @@ import styles from './Services.module.css'
 const Services = (): JSX.Element => {
   const [artifactState, setArtifactState] = useState(null)
 
-  const handleButtonClick = (artifact) => {
-    setArtifactState(artifact)
-  }
+  // const handleButtonClick = (artifact) => {
+  //   setArtifactState(artifact)
+  // }
 
   return (
     <div className="artifacts bg-main">
@@ -41,7 +41,7 @@ const Services = (): JSX.Element => {
         <div className={styles.buttons}>
           <button
             className={styles.button}
-            onClick={() => handleButtonClick('explainer_video')}
+            // onClick={() => handleButtonClick('explainer_video')}
           >
             <div className={styles.headline}>Explainer Video</div>
             <div className={styles.subheadline}>
@@ -50,7 +50,7 @@ const Services = (): JSX.Element => {
           </button>
           <button
             className={styles.button}
-            onClick={() => handleButtonClick('social_media_content')}
+            // onClick={() => handleButtonClick('social_media_content')}
           >
             <div className={styles.headline}>Social Media Content</div>
             <div className={styles.subheadline}>
@@ -59,7 +59,7 @@ const Services = (): JSX.Element => {
           </button>
           <button
             className={styles.button}
-            onClick={() => handleButtonClick('frontend')}
+            // onClick={() => handleButtonClick('frontend')}
           >
             <div className={styles.headline}>Frontend</div>
             <div className={styles.subheadline}>
@@ -68,14 +68,14 @@ const Services = (): JSX.Element => {
           </button>
           <button
             className={styles.button}
-            onClick={() => handleButtonClick('livestreams')}
+            // onClick={() => handleButtonClick('livestreams')}
           >
             <div className={styles.headline}>Livestreams</div>
             <div className={styles.subheadline}>Small sized livestreams</div>
           </button>
           <button
             className={styles.button}
-            onClick={() => handleButtonClick('video_commercials')}
+            // onClick={() => handleButtonClick('video_commercials')}
           >
             <div className={styles.headline}>Video Commercials</div>
             <div className={styles.subheadline}>
