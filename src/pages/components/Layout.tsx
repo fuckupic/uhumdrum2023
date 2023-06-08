@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>Uhumdrum</title>
+        <title>Uhumdrum | Creative Studio based in Void</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header className="fixed z-[999] w-[100%] ">
