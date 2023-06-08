@@ -4,33 +4,33 @@
 
 @font-face {
   font-family: 'LoveCraft';
-  src: url('/fonts/LoveCraft.woff') format('woff');
+  src: url('./fonts/LoveCraft.woff') format('woff');
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'LoveCraft';
-  src: url('/fonts/LoveCraft-Italic.woff') format('woff');
+  src: url('./fonts/LoveCraft-Italic.woff') format('woff');
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Bodoni-72';
-  src: url('/fonts/Bodoni-72/Bodoni-72-Medium.woff') format('woff');
+  src: url('./fonts/Bodoni-72/Bodoni-72-Medium.woff') format('woff');
   font-style: normal;
   font-display: swap;
   font-weight: 500;
 }
 @font-face {
   font-family: 'Bodoni-72';
-  src: url('/fonts/Bodoni-72/Bodoni-72-Bold.woff') format('woff');
+  src: url('./fonts/Bodoni-72/Bodoni-72-Bold.woff') format('woff');
   font-style: normal;
   font-display: swap;
   font-weight: bold;
 }
 
 .wave {
-  @apply absolute bottom-[6%] left-0 scale-[3];
+  @apply absolute bottom-[5%] left-0 scale-[3];
 }
 
 .tentacle {

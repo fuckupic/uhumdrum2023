@@ -11,8 +11,7 @@ export default function Home() {
     <>
       <Hero />
       {/* <Services /> */}
-      {/* <Services />
-      <Portfolio /> */}
+      {/* <Portfolio /> */}
     </>
   )
 }
