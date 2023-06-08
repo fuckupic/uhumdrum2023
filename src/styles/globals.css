@@ -2,6 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'LoveCraft';
+  src: url('/fonts/LoveCraft.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'LoveCraft';
+  src: url('/fonts/LoveCraft-Italic.woff') format('woff');
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Bodoni-72';
+  src: url('/fonts/Bodoni-72/Bodoni-72-Medium.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Bodoni-72';
+  src: url('/fonts/Bodoni-72/Bodoni-72-Bold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+}
+
+.wave {
+  @apply absolute bottom-[6%] left-0 scale-[3];
+}
+
+.tentacle {
+  @apply absolute bottom-0 drop-shadow-[0_0_5px_rgba(0,0,0,0.25)];
+}
+.tentacles1 {
+  @apply w-[40%] flex justify-between relative;
+}
+
+.tentacles2 {
+  @apply w-[20%] flex justify-between;
+}
+.tentacles3 {
+  @apply w-[20%] flex justify-between;
+}
+
+h1 {
+  @apply text-8xl;
+}
+
+.noise {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/images/noise.gif');
+}
+
+.grain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/images/grain.gif');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +101,108 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Add responsive styles for mobile and tablet devices */
+@media screen and (max-width: 768px) {
+  .wave {
+    @apply scale-[8] translate-x-[50%];
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+
+  .tentacles1,
+  .tentacles2,
+  .tentacles3 {
+    @apply w-[50%] transform translate-y-[-50%];
+  }
+  .tentacles1 .tentacleWrapper,
+  .tentacles2 .tentacleWrapper,
+  .tentacles3 .tentacleWrapper {
+    transform: scale(
+      0.8
+    ); /* Adjust the scale factor based on the desired size on mobile */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wave {
+    @apply scale-[7] translate-x-[30%];
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  .tentacles1,
+  .tentacles2,
+  .tentacles3 {
+    @apply w-[40%] transform translate-y-[-35%];
+  }
+}
+
+.artifacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.window {
+  height: 600px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.window img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subheadline {
+  font-size: 14px;
+  opacity: 0.8;
 }

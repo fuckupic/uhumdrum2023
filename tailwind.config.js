@@ -1,4 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = {
+  main: '#129081',
+  secondary: '#2C3B38',
+  red: '#EE4C39',
+  white: '#EAEFF3',
+}
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -8,9 +16,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'main-gradient': `linear-gradient(180deg, ${colors.main} 0%, ${colors.secondary} 100%)`,
+      },
+      fontFamily: {
+        headlines: ['LoveCraft', 'serif'],
+        text: ['Bodoni-72', 'serif'],
+      },
+      textShadow: {
+        papercut: '5px 0px 4px rgba(0, 0, 0, 0.25)',
+      },
+      backgroundColor: {
+        ...colors,
+      },
+      textColor: {
+        ...colors,
       },
     },
   },

@@ -1,0 +1,6 @@
+/* components/Hero.module.css */
+
+.tentacles,
+.glitching-objects {
+  will-change: transform, opacity;
+}
