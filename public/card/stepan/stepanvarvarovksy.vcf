@@ -1,19 +1,18 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Kapic;Tady;;;
-FN:Tady Kapic
+N:Varvařovský;Štěpán;;;
+FN:Štěpán Varvařovský
 ORG:Uhumdrum | We summon crazy ideas
 ADR;TYPE=WORK:Creative studio based in Pilsen
-TITLE:Human CEO
-TEL;TYPE=CELL:+420776658505
+TITLE:Human, Head of Postproduction
+TEL;TYPE=CELL:+420608493678
 TEL;TYPE=WORK:
 TEL;TYPE=HOME:
 TEL;TYPE=MSG:
-EMAIL;TYPE=WORK:tady@uhumdrum.com
+EMAIL;TYPE=WORK:stepan@uhumdrum.com
 URL;TYPE=Digital Business Card:https://uhumdrum.com
-URL:www.uhumdrum.com
-URL;TYPE=Website:www.uhumdrum.com
-URL;TYPE=GitHub:https://github.com/fuckupic
+URL:https://www.uhumdrum.com
+URL;TYPE=Website:https://www.uhumdrum.com
 URL;TYPE=YouTube:https://youtube.com/@uhumdrum
 KEY;TYPE=PGP;ENCODING=b:
 NOTE:Animated videos | Social content | Explainer videos | Creative projects
