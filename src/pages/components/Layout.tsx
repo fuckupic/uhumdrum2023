@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
         <title>Uhumdrum | Creative Studio based in Void</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <header className="fixed z-[999] w-[100%] ">
+      <header className="fixed z-[999] w-[100%] h-[100%] flex flex-col justify-between">
         <div className="flex justify-center items-center h-16">
           {/* img with svg logo.svg */}
           <img
